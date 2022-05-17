@@ -35,51 +35,52 @@ public class ArrayUtil {
         System.out.println("min = " + min);
 
 
-        System.out.println("զույգերը");
+        System.out.println("զույգեր");
         // տպել մասիվի բոլոր զույգ էլեմենտները
 
         for (int i = 0; i < array.length; i++) {
             if (array[i] % 2 == 0) {
-                System.out.println(array[i]);
+                System.out.print(array[i] + " ");
             }
         }
+        System.out.println();
 
         System.out.println("կենտեր");
         // տպել մասիվի բոլոր կենտ էլեմենտները
 
         for (int i = 0; i < array.length; i++) {
-            if (array[i] %2 !=0) {
-                System.out.println(array[i]);
+            if (array[i] % 2 != 0) {
+                System.out.print(array[i] + " ");
             }
         }
-
-              // տպել մասիվի բոլոր զույգ էլեմենտները քանակը
-              int evencount=0;
+        System.out.println();
+        // տպել մասիվի բոլոր զույգ էլեմենտները քանակը
+        int evenCount = 0;
         for (int i = 0; i < array.length; i++) {
             if (array[i] % 2 == 0) {
-                evencount ++;
+                evenCount++;
 
             }
         }
-        System.out.println("evencount " +  evencount);
+        System.out.println("evenСount " + evenCount);
 
         // տպել մասիվի բոլոր  կենտ էլեմենտները քանակը
-        int oddcount=0;
+        int oddСount = 0;
         for (int i = 0; i < array.length; i++) {
             if (array[i] % 2 != 0) {
-                oddcount ++;
+                oddСount++;
 
             }
         }
-        System.out.println("oddcount " +  oddcount);
+        System.out.println("oddСount " + oddСount);
 
 
         //տպել մասիվի բոլոր թվերի միջին թվաբանականը
 
 
         int i;
-        int result = 0;
-        for (i = 0; i < 10; i++) {
+        double result = 0;
+        for (i = 0; i < array.length; i++) {
             result = result + array[i];
         }
         System.out.println("Average is " + result / 10);
