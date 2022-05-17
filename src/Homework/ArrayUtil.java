@@ -83,7 +83,7 @@ public class ArrayUtil {
         for (i = 0; i < array.length; i++) {
             result = result + array[i];
         }
-        System.out.println("Average is " + result / 10);
+        System.out.println("Average is " + result / array.length);
 
 
         // բոլոր էլեմենտների գումարը
